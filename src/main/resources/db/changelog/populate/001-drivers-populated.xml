@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="2" author="jack.sparrow">
+        <!-- Insert Sample Driver 1 -->
+        <insert tableName="drivers">
+            <column name="name" value="Alice Smith"/>
+            <column name="latitude" valueNumeric="12.9716"/>
+            <column name="longitude" valueNumeric="77.5946"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="5"/>
+        </insert>
+
+        <!-- Insert Sample Driver 2 -->
+        <insert tableName="drivers">
+            <column name="name" value="Bob Jones"/>
+            <column name="latitude" valueNumeric="12.9730"/>
+            <column name="longitude" valueNumeric="77.5946"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="2"/>
+        </insert>
+
+        <insert tableName="drivers">
+            <column name="name" value="Alice Smith"/>
+            <column name="latitude" valueNumeric="12.9716"/>
+            <column name="longitude" valueNumeric="77.5946"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="5"/>
+        </insert>
+
+        <!-- Driver 2 -->
+        <insert tableName="drivers">
+            <column name="name" value="Bob Jones"/>
+            <column name="latitude" valueNumeric="12.9730"/>
+            <column name="longitude" valueNumeric="77.5946"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="2"/>
+        </insert>
+
+        <!-- Driver 3 -->
+        <insert tableName="drivers">
+            <column name="name" value="Charlie Brown"/>
+            <column name="latitude" valueNumeric="12.9800"/>
+            <column name="longitude" valueNumeric="77.6000"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="8"/>
+        </insert>
+
+        <!-- Driver 4 -->
+        <insert tableName="drivers">
+            <column name="name" value="Diana Prince"/>
+            <column name="latitude" valueNumeric="12.9650"/>
+            <column name="longitude" valueNumeric="77.5800"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="1"/>
+        </insert>
+
+        <!-- Driver 5 -->
+        <insert tableName="drivers">
+            <column name="name" value="Ethan Hunt"/>
+            <column name="latitude" valueNumeric="12.9900"/>
+            <column name="longitude" valueNumeric="77.6100"/>
+            <column name="available" valueBoolean="false"/>
+            <column name="completed_deliveries" valueNumeric="15"/>
+        </insert>
+
+        <!-- Driver 6 -->
+        <insert tableName="drivers">
+            <column name="name" value="Fiona Gallagher"/>
+            <column name="latitude" valueNumeric="12.9720"/>
+            <column name="longitude" valueNumeric="77.5950"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="2"/>
+        </insert>
+
+        <!-- Driver 7 -->
+        <insert tableName="drivers">
+            <column name="name" value="George Clark"/>
+            <column name="latitude" valueNumeric="12.9500"/>
+            <column name="longitude" valueNumeric="77.5700"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="0"/>
+        </insert>
+
+        <!-- Driver 8 -->
+        <insert tableName="drivers">
+            <column name="name" value="Hannah Abbott"/>
+            <column name="latitude" valueNumeric="13.0500"/>
+            <column name="longitude" valueNumeric="77.6500"/> <!-- Out of 10km range -->
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="4"/>
+        </insert>
+
+        <!-- Driver 9 -->
+        <insert tableName="drivers">
+            <column name="name" value="Ian Malcolm"/>
+            <column name="latitude" valueNumeric="12.9740"/>
+            <column name="longitude" valueNumeric="77.5940"/>
+            <column name="available" valueBoolean="true"/>
+            <column name="completed_deliveries" valueNumeric="10"/>
+        </insert>
+
+        <!-- Driver 10 -->
+        <insert tableName="drivers">
+            <column name="name" value="Julia Roberts"/>
+            <column name="latitude" valueNumeric="12.9680"/>
+            <column name="longitude" valueNumeric="77.5910"/>
+            <column name="available" valueBoolean="false"/>
+            <column name="completed_deliveries" valueNumeric="7"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>
